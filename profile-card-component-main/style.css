@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.main{
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_card{
+    background: white;
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+    color: hsl(229, 23%, 23%);
+    position: relative;
+}
+.card-header{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+#profile_picture{
+    border: 5px solid white;
+    border-radius: 100%;
+    margin: -50px auto 15px auto;
+}
+.city{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.top-image,
+.bottom-image{
+    position: absolute;
+    
+}
+
+.top-image{
+    top: 0;
+    left: 0;
+    transform: translate(-35%, -55%);
+}
+
+.bottom-image{
+    right: 0;
+    bottom: 0;
+    transform: translate(30%, 70%);
+
+}
+
+@media screen and (min-width: 1400px){
+    .top-image{
+        top: 0;
+        left: 0;
+        transform: translate(-25%, -60%);
+    }
+    
+    .bottom-image{
+        right: 0;
+        bottom: 0;
+        transform: translate(20%, 65%);
+    }
+}
+@media screen and (max-width: 400px){
+    .top-image{
+        top: 0;
+        left: 0;
+        transform: translate(-75%, -70%);
+    }
+    
+    .bottom-image{
+        right: 0;
+        bottom: 0;
+        transform: translate(80%, 60%);
+    }
+}
+.age,
+.city,
+.data{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.data{
+  font-size: 12px;
+}
+.info{
+    font-weight: 700;
+}
+
+#profile-info{ 
+    display: flex;
+    border-top: 1px solid hsl(0, 0%, 88%);
+}
+
+#profile-info .info{
+   flex: 1;
+   display: flex;
+   height: 100px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;   
+}
